@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/il_predestinato/multiagent_ws/devel -DCMAKE_INSTALL_PREFIX=/home/il_predestinato/multiagent_ws/install -G Unix Makefiles
