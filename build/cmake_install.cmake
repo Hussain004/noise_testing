@@ -131,6 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/il_predestinato/multiagent_ws/build/gtest/cmake_install.cmake")
+  include("/home/il_predestinato/multiagent_ws/build/robomaster_interface/cmake_install.cmake")
 
 endif()
 

@@ -405,6 +405,353 @@ clean: gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory robomaster_interface
+
+# Convenience name for "all" pass in the directory.
+robomaster_interface/all:
+
+.PHONY : robomaster_interface/all
+
+# Convenience name for "clean" pass in the directory.
+robomaster_interface/clean: robomaster_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+robomaster_interface/clean: robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+robomaster_interface/clean: robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+robomaster_interface/clean: robomaster_interface/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+robomaster_interface/clean: robomaster_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+robomaster_interface/clean: robomaster_interface/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+robomaster_interface/clean: robomaster_interface/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+robomaster_interface/clean: robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+robomaster_interface/clean: robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
+robomaster_interface/clean: robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+
+.PHONY : robomaster_interface/clean
+
+# Convenience name for "preinstall" pass in the directory.
+robomaster_interface/preinstall:
+
+.PHONY : robomaster_interface/preinstall
+
+#=============================================================================
+# Target rules for target robomaster_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+robomaster_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f robomaster_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make robomaster_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f robomaster_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make robomaster_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/il_predestinato/multiagent_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_cpp"
+.PHONY : robomaster_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+robomaster_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/il_predestinato/multiagent_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robomaster_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/il_predestinato/multiagent_ws/build/CMakeFiles 0
+.PHONY : robomaster_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_cpp: robomaster_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : std_msgs_generate_messages_cpp
+
+# clean rule for target.
+robomaster_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f robomaster_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make robomaster_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+.PHONY : robomaster_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: robomaster_interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/il_predestinato/multiagent_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_py"
+.PHONY : robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/il_predestinato/multiagent_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/il_predestinato/multiagent_ws/build/CMakeFiles 0
+.PHONY : robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_py: robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_py
+
+# clean rule for target.
+robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+.PHONY : robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/il_predestinato/multiagent_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_cpp"
+.PHONY : robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/il_predestinato/multiagent_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/il_predestinato/multiagent_ws/build/CMakeFiles 0
+.PHONY : robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_cpp: robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_cpp
+
+# clean rule for target.
+robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+.PHONY : robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robomaster_interface/CMakeFiles/std_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+robomaster_interface/CMakeFiles/std_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f robomaster_interface/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make robomaster_interface/CMakeFiles/std_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f robomaster_interface/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make robomaster_interface/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/il_predestinato/multiagent_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_eus"
+.PHONY : robomaster_interface/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+robomaster_interface/CMakeFiles/std_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/il_predestinato/multiagent_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robomaster_interface/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/il_predestinato/multiagent_ws/build/CMakeFiles 0
+.PHONY : robomaster_interface/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_eus: robomaster_interface/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+
+.PHONY : std_msgs_generate_messages_eus
+
+# clean rule for target.
+robomaster_interface/CMakeFiles/std_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f robomaster_interface/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make robomaster_interface/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+.PHONY : robomaster_interface/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+
+# clean rule for target.
+clean: robomaster_interface/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robomaster_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+robomaster_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f robomaster_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make robomaster_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f robomaster_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make robomaster_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/il_predestinato/multiagent_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_lisp"
+.PHONY : robomaster_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+robomaster_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/il_predestinato/multiagent_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robomaster_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/il_predestinato/multiagent_ws/build/CMakeFiles 0
+.PHONY : robomaster_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_lisp: robomaster_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : std_msgs_generate_messages_lisp
+
+# clean rule for target.
+robomaster_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f robomaster_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make robomaster_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+.PHONY : robomaster_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: robomaster_interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robomaster_interface/CMakeFiles/std_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+robomaster_interface/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f robomaster_interface/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make robomaster_interface/CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f robomaster_interface/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make robomaster_interface/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/il_predestinato/multiagent_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_nodejs"
+.PHONY : robomaster_interface/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+robomaster_interface/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/il_predestinato/multiagent_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robomaster_interface/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/il_predestinato/multiagent_ws/build/CMakeFiles 0
+.PHONY : robomaster_interface/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_nodejs: robomaster_interface/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : std_msgs_generate_messages_nodejs
+
+# clean rule for target.
+robomaster_interface/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f robomaster_interface/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make robomaster_interface/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+.PHONY : robomaster_interface/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+
+# clean rule for target.
+clean: robomaster_interface/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robomaster_interface/CMakeFiles/std_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+robomaster_interface/CMakeFiles/std_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f robomaster_interface/CMakeFiles/std_msgs_generate_messages_py.dir/build.make robomaster_interface/CMakeFiles/std_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f robomaster_interface/CMakeFiles/std_msgs_generate_messages_py.dir/build.make robomaster_interface/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/il_predestinato/multiagent_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_py"
+.PHONY : robomaster_interface/CMakeFiles/std_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+robomaster_interface/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/il_predestinato/multiagent_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robomaster_interface/CMakeFiles/std_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/il_predestinato/multiagent_ws/build/CMakeFiles 0
+.PHONY : robomaster_interface/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_py: robomaster_interface/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+
+.PHONY : std_msgs_generate_messages_py
+
+# clean rule for target.
+robomaster_interface/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f robomaster_interface/CMakeFiles/std_msgs_generate_messages_py.dir/build.make robomaster_interface/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : robomaster_interface/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: robomaster_interface/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/il_predestinato/multiagent_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_lisp"
+.PHONY : robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/il_predestinato/multiagent_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/il_predestinato/multiagent_ws/build/CMakeFiles 0
+.PHONY : robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_lisp: robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# clean rule for target.
+robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+.PHONY : robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir
+
+# All Build rule for target.
+robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/il_predestinato/multiagent_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_nodejs"
+.PHONY : robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/il_predestinato/multiagent_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/il_predestinato/multiagent_ws/build/CMakeFiles 0
+.PHONY : robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_nodejs: robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_nodejs
+
+# clean rule for target.
+robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
+.PHONY : robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
+
+# clean rule for target.
+clean: robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/il_predestinato/multiagent_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_eus"
+.PHONY : robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/il_predestinato/multiagent_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/il_predestinato/multiagent_ws/build/CMakeFiles 0
+.PHONY : robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_eus: robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_eus
+
+# clean rule for target.
+robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+.PHONY : robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+
+# clean rule for target.
+clean: robomaster_interface/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.
