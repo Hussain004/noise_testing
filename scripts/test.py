@@ -76,9 +76,9 @@ class RobotTester:
 
     def run_test(self):
         for i, (x, y) in enumerate(self.directions):
-            print(f"Testing direction {i+1}: ({x}, {y})")
+            print("Testing direction {}: ({}, {})".format(i+1, x, y))
             for j in range(10):
-                print(f"Movement {j+1} forward:")
+                print("Movement {} forward:".format(j+1))
                 input("Press Enter to start forward movement")
                 self.move_robot(x, y)
                 input("Press Enter after measuring to start backward movement")
