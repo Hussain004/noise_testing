@@ -37,7 +37,7 @@ class RobotTester:
 
     def get_robot_position(self):
         try:
-            trans = self.tf_buffer.lookup_transform('world', f'{self.name}_odom_combined', rospy.Time())
+            trans = self.tf_buffer.lookup_transform('world', '{}_odom_combined'.format(self.name), rospy.Time())
             return trans.transform.translation.x, trans.transform.translation.y
         except (tf2_ros.LookupException, tf2_ros.ConnectivityException, tf2_ros.ExtrapolationException):
             return 0, 0
