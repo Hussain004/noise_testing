@@ -1,16 +1,19 @@
 #!/usr/bin/env python
+from __future__ import print_function, division
 import rospy
 import tf2_ros
 import geometry_msgs.msg
 from geometry_msgs.msg import Twist
 import math
+from robomaster_robot import robomaster_robot
 
-class RobotTester:
+class RobotTester(object): 
     def __init__(self):
         rospy.init_node('robot_tester', anonymous=True)
-        self.name = rospy.get_param('~robot_name', 'robot')
-        self.pub = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
-        self.rate = rospy.Rate(10)
+        robot_number = 0
+        init_x = 0
+        init_y = 0
+        self.robot0 = robomaster_robot(robot_number, init_x, init_y)
 
         self.tf_buffer = tf2_ros.Buffer()
         self.tf_listener = tf2_ros.TransformListener(self.tf_buffer)
@@ -28,18 +31,17 @@ class RobotTester:
 
         self.Kp = rospy.get_param('~Kp', 0.5)
         self.max_speed = rospy.get_param('~max_speed', 0.5)
+        self.rate = rospy.Rate(10)
 
     def send_velocities(self, vx, vy):
-        twist = Twist()
-        twist.linear.x = vx
-        twist.linear.y = vy
-        self.pub.publish(twist)
+        self.robot0.send_velocities(vx, vy)
 
     def get_robot_position(self):
         try:
-            trans = self.tf_buffer.lookup_transform('world', '{}_odom_combined'.format(self.name), rospy.Time())
+            trans = self.tf_buffer.lookup_transform('world', 'robot0_odom_combined', rospy.Time())
             return trans.transform.translation.x, trans.transform.translation.y
         except (tf2_ros.LookupException, tf2_ros.ConnectivityException, tf2_ros.ExtrapolationException):
+            rospy.logwarn("Failed to get robot position, using (0, 0)")
             return 0, 0
 
     def move_robot(self, target_x, target_y):
@@ -72,30 +74,32 @@ class RobotTester:
         self.stop_robot()
 
     def stop_robot(self):
-        self.send_velocities(0, 0)
+        self.robot0.send_velocities(0, 0)
 
     def run_test(self):
         for i, (x, y) in enumerate(self.directions):
             print("Testing direction {}: ({}, {})".format(i+1, x, y))
             for j in range(10):
                 print("Movement {} forward:".format(j+1))
-                input("Press Enter to start forward movement")
+                #raw_input("Press Enter to start forward movement")
                 self.move_robot(x, y)
-                input("Press Enter after measuring to start backward movement")
+                raw_input("Press Enter after measuring to start backward movement")
                 self.move_robot(-x, -y)
-                input("Press Enter after measuring to continue")
+                raw_input("Press Enter after measuring to continue")
 
             print("Finished testing this direction.")
-            input("Press Enter to move to the next direction")
+            raw_input("Press Enter to move to the next direction")
 
     def shutdown(self):
         self.stop_robot()
 
 if __name__ == '__main__':
+    tester = None
     try:
         tester = RobotTester()
         tester.run_test()
     except rospy.ROSInterruptException:
         pass
     finally:
-        tester.shutdown()
+        if tester is not None:
+            tester.shutdown()
