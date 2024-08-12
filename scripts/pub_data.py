@@ -24,13 +24,13 @@ def get_quaternion_from_euler(roll, pitch, yaw):
 
 class rover:
     def __init__(self):
+        rospy.init_node('robomaster', anonymous=True)
         rospy.Subscriber('/victory_signal', Bool, self.play_audio)
         self.imu_pub = rospy.Publisher('imu_data', Imu, queue_size=10)
         # self.pose_pub = rospy.Publisher('pose_data', Point, queue_size=10)
         # self.angle_pub = rospy.Publisher('angle_data', )
         self.odom_pub = rospy.Publisher("odom", Odometry, queue_size=10)
         rospy.Subscriber('cmd_vel', Twist, self.send_velocities)
-        rospy.init_node('robomaster', anonymous=True)
         self.robot_name = 0
         self.robo = robot.Robot()
         try:

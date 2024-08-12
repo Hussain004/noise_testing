@@ -1,23 +1,12 @@
 <launch>
-
-  <machine name="robomaster0" address="192.168.0.233" env-loader="/home/lums/catkin_ws/devel/env.sh" user="lums" password="root1234"/>
-
-  <include file="$(find noise_testing)/launch/noise_test.launch">
-        <arg name="robot_name" value="robot0"/>
-        <arg name="machine_name" value="robomaster0"/>
-        <arg name="initial_x" value="0.0"/>
-        <arg name="initial_y" value="0.0"/>
-    </include>
+  <machine name="robot4" address="192.168.0.233" env-loader="/home/robot4/Hussain_ws/devel/env.sh" user="robot4" default="true"/>
 
   <node name="pub_data" pkg="noise_testing" type="pub_data.py" output="screen"/>
 
-  <node name="robomaster_robot_controller" pkg="noise_testing" type="robomaster_robot.py" output="screen"/>
-
-  <node name="noise_tester" pkg="noise_testing" type="test.py" output="screen">
+  <node name="noise_tester" pkg="noise_testing" type="test.py" output="screen"> 
     <param name="Kp" value="0.5" />
     <param name="max_speed" value="0.5" />
   </node>
 
-  <node pkg="tf" type="static_transform_publisher" name="world_to_odom_broadcaster" args="0 0 0 0 0 0 world robot0_odom 100" />
-
+  <node pkg="tf" type="static_transform_publisher" name="world_to_odom_broadcaster" args="0 0 0 0 0 0 world robot0_odom 100"/>
 </launch>

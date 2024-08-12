@@ -17,6 +17,7 @@ class RobotTester(object):
 
         self.tf_buffer = tf2_ros.Buffer()
         self.tf_listener = tf2_ros.TransformListener(self.tf_buffer)
+        self.movement_distance = rospy.get_param('~movement_distance', 1)
 
         self.directions = [
             (1, 0),    # Right
@@ -81,10 +82,9 @@ class RobotTester(object):
             print("Testing direction {}: ({}, {})".format(i+1, x, y))
             for j in range(10):
                 print("Movement {} forward:".format(j+1))
-                #raw_input("Press Enter to start forward movement")
-                self.move_robot(x, y)
+                self.move_robot(x * self.movement_distance, y * self.movement_distance)
                 raw_input("Press Enter after measuring to start backward movement")
-                self.move_robot(-x, -y)
+                self.move_robot(-x * self.movement_distance, -y * self.movement_distance)
                 raw_input("Press Enter after measuring to continue")
 
             print("Finished testing this direction.")
