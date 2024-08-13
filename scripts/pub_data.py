@@ -142,9 +142,9 @@ class rover:
 
         odom = Odometry()
         odom.header.stamp = rospy.Time.now()
-        odom.header.frame_id = "{}_odom".format(self.robot_name)
+        odom.header.frame_id = "world"
 
-        odom.child_frame_id = "{}_base_link".format(self.robot_name)
+        odom.child_frame_id = "robot0_odom_combined"
 
         odom.pose.pose=Robot_pose
         odom.pose.covariance=cov
@@ -181,3 +181,4 @@ try:
     rospy.on_shutdown(robo.close_robot)
 except rospy.ROSInterruptException:
     robo.robo.close()
+
